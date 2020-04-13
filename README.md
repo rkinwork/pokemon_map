@@ -17,8 +17,12 @@
 ### Как запустить
 
 - Скачайте код
-- Установите зависимости командой `pip install -r requirements.txt`
-- Запустите сервер командой `python3 manage.py runserver`
+- Установите [Docker](https://www.docker.com/)
+- Соберите образ `docker-compose build`
+- Запустите `docker-compose up`
+
+Если работаете с PyCharm, то добавьте в настройки файл `docker-compose-pycharm.yml`. 
+Он уберёт аргументы по умолчанию, так как система сама передает всё, что нужно для запуска
 
 ### Переменные окружения
 
