@@ -69,6 +69,13 @@ def prepare_view_description(pokemon: Pokemon) -> dict:
             "pokemon_id": pokemon.previous_evolution.id,
             "img_url": pokemon.previous_evolution.image.url
         }
+
+    information['element_type'] = [{'title': element_type.title,
+                                    'img': element_type.image.url,
+                                    'strong_against': element_type.strong_against.all()
+                                    } for element_type in
+                                   pokemon.elements.all()]
+
     return information
 
 

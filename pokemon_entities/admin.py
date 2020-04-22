@@ -1,5 +1,5 @@
 from django.contrib import admin
 
-from .models import Pokemon, PokemonEntity
+from .models import Pokemon, PokemonEntity, PokemonElementType
 
-admin.site.register((Pokemon, PokemonEntity))
+admin.site.register((Pokemon, PokemonEntity, PokemonElementType))
